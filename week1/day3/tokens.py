@@ -29,7 +29,7 @@ for prompt in prompts:
     response = client.chat.completions.create(
         model=model,
         messages=messages,
-        max_tokens=5000,
+        max_tokens=5000
     )
     usage = response.usage
     print(
